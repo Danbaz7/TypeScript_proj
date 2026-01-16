@@ -32,15 +32,6 @@ A modern, browser-based project management application built entirely with TypeS
 - **Drag-and-Drop:** Interfaces and event handlers enable moving projects between lists with visual feedback.
 - **Validation:** Input validation logic ensures data integrity before adding projects.
 
-## File Structure
-
-- `src/app.ts` — Main TypeScript source file containing all logic and components.
-- `README.md` — This documentation file.
-- `index.html` — Main HTML file.
-- `app.css` — Styles for the app.
-- `tsconfig.json` — TypeScript configuration.
-- `package.json` — Project metadata and scripts.
-
 ## How TypeScript Improves This Project
 
 - Prevents runtime errors by catching type issues at compile time.
