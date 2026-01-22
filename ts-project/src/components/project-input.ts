@@ -1,5 +1,6 @@
 import { Component } from "./base-component.js";
-import { Validatable, validate } from "../util/validation.js";
+import type { Validatable } from "../util/validation.js";
+import { validate } from "../util/validation.js";
 import { autobind } from "../decorators/autobind-decorator.js";
 import { projectState } from "../state/project-state.js";
 
@@ -12,13 +13,13 @@ export class ProjectInput extends Component<HTMLDivElement, HTMLFormElement> {
   constructor() {
     super("project-input", "app", true, "user-input");
     this.titleInputElement = this.element.querySelector(
-      "#title"
+      "#user-title"
     ) as HTMLInputElement;
     this.descriptionInputElement = this.element.querySelector(
-      "#description"
+      "#user-description"
     ) as HTMLInputElement;
     this.peopleInputElement = this.element.querySelector(
-      "#people"
+      "#user-people"
     ) as HTMLInputElement;
 
     this.configure();
